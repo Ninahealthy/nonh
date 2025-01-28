@@ -37,7 +37,7 @@
 .cardSmall {
   border-radius: 50px;
   display: flex;
-  align-items: end;
+  align-items: flex-end;
   max-width: 500px;
 }
 
