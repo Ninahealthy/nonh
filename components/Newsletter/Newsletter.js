@@ -54,20 +54,6 @@ export default function ContactPage() {
             )}
           </div>
 
-          <div className={styles.formGroup}>
-            <label className={styles.label}>Message</label>
-            <textarea
-              name="message"
-              rows="4"
-              className={`${styles.input} ${styles.textarea}`}
-              required
-              disabled={pending || state.success}
-            />
-            {state.errors?.message && (
-              <span className={styles.errorText}>{state.errors.message}</span>
-            )}
-          </div>
-
           <button
             type="submit"
             className={`${styles.button} ${
@@ -81,13 +67,13 @@ export default function ContactPage() {
                 Sending...
               </span>
             ) : state.success ? (
-              "Message Sent!"
+              "Okay!"
             ) : (
-              "Send Message"
+              "Signup"
             )}
           </button>
         </Form>
-      </div>{" "}
+      </div>
     </div>
   );
 }

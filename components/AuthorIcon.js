@@ -1,5 +1,6 @@
 import Image from "next/image";
 import author from "@/public/young-woman.png";
+import Link from "next/link";
 
 const style = { width: 50, height: 50 };
 
@@ -7,12 +8,13 @@ export default function AuthorIcon() {
   return (
     <>
       <authoricon>
-        <Image src={author} alt="author" style={style} />
+        <Link href="/About">
+          <Image src={author} alt="author" style={style} />
 
-        <h5>
-          <text>By</text> Nina Bernard <br></br> Dernière mise à jour le, 15
-          Avril 2023
-        </h5>
+          <h5>
+            By Nina Bernard <br></br> Last Update, 1/28/2025
+          </h5>
+        </Link>
       </authoricon>
     </>
   );

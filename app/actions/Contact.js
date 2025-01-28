@@ -1,4 +1,3 @@
-// app/actions.js
 "use server";
 import nodemailer from "nodemailer";
 
