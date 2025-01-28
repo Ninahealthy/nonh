@@ -1,0 +1,17 @@
+.disqus {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.disq {
+  width: 90vw;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+@media (min-width: 600px) {
+  .disq {
+    width: 60vw;
+  }
+}
