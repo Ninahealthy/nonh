@@ -1,18 +1,18 @@
 import Image from "next/image";
 import Link from "next/link";
 import Styles from "./Topics.module.css";
-import pic from "@/public/2.jpg";
+import pic from "@/public/1.jpg";
 import pic2 from "@/public/2.jpg";
 import pic3 from "@/public/3.jpg";
 
-export default function HjemDekor() {
+export default function Travel() {
   const topics = [
     {
       id: 1,
-      title: "5 Små Vaner som Gir Stor Personlig Vekst",
+      title: "Do you wonder why some connections fade?",
       image: pic,
       size: "large",
-      slug: "/Livsstil/5-Sma-Vaner-som-Gir-Stor-Personlig-Vekst",
+      slug: "/topics/connections",
     },
     /*{
       id: 2,

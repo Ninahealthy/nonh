@@ -5,12 +5,8 @@ export const metadata = {
     "Utforsk spennende reisemål, tips for å reise smart, og personlige reiseopplevelser. Få inspirasjon til din neste ferie eller weekendtur.",
 };
 
-import Reise from "@/components/Reise";
+import Travel from "@/components/Travel";
 
-export default function ReisePage() {
-  return (
-    <>
-      <Reise />
-    </>
-  );
+export default function TravelPage() {
+  return <Travel />;
 }

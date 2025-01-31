@@ -5,7 +5,7 @@ import pic from "@/public/2.jpg";
 import pic2 from "@/public/2.jpg";
 import pic3 from "@/public/3.jpg";
 
-export default function Livsstil() {
+export default function HomeDecor() {
   const topics = [
     {
       id: 1,

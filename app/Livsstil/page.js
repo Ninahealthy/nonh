@@ -1,4 +1,4 @@
-import Livsstil from "@/components/Livsstil";
+import LifeSyle from "@/components/LifeStyle";
 
 export const metadata = {
   title: "Livsstil",
@@ -7,10 +7,6 @@ export const metadata = {
     "Oppdag inspirasjon for en balansert og meningsfull livsstil. Finn tips om selvutvikling, velvære, produktivitet, og daglig livsglede.",
 };
 
-export default function LivsstilPage() {
-  return (
-    <>
-      <Livsstil />
-    </>
-  );
+export default function LifeStylePage() {
+  return <LifeSyle />;
 }

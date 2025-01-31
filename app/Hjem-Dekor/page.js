@@ -1,4 +1,4 @@
-import HjemDekor from "@/components/HjemDekor";
+import HomeDecor from "@/components/HomeDecor";
 
 export const metadata = {
   title: "Hjem & Dekor",
@@ -7,10 +7,6 @@ export const metadata = {
     "Oppdag inspirasjon for en balansert og meningsfull livsstil. Finn tips om selvutvikling, velvære, produktivitet, og daglig livsglede.",
 };
 
-export default function HjemDekorPage() {
-  return (
-    <>
-      <HjemDekor />
-    </>
-  );
+export default function HomeDecorPage() {
+  return <HomeDecor />;
 }

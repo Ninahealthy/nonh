@@ -1,18 +1,18 @@
 import Image from "next/image";
 import Link from "next/link";
 import Styles from "./Topics.module.css";
-import pic from "@/public/1.jpg";
+import pic from "@/public/2.jpg";
 import pic2 from "@/public/2.jpg";
 import pic3 from "@/public/3.jpg";
 
-export default function Reise() {
+export default function LifeSyle() {
   const topics = [
     {
       id: 1,
-      title: "Do you wonder why some connections fade?",
+      title: "5 Små Vaner som Gir Stor Personlig Vekst",
       image: pic,
       size: "large",
-      slug: "/topics/connections",
+      slug: "/Livsstil/5-Sma-Vaner-som-Gir-Stor-Personlig-Vekst",
     },
     /*{
       id: 2,
