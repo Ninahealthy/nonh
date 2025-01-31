@@ -1,13 +1,13 @@
 export const metadata = {
-  title: "Reise Godt",
-  category: "Reise Godt",
+  title: "Reise",
+  category: "Reise",
   description:
-    "Vous avez envie de vous chouchouter et de vous ressourcer ? Nous avons ce qu’il vous faut ! Notre catégorie bien-être regroupe tout ce qui peut vous aider à vous sentir mieux dans votre corps et dans votre tête. Que vous cherchiez à vous relaxer, à vous tonifier ou à vous embellir, vous trouverez votre bonheur chez nous. Alors venez vite découvrir notre catégorie bien-être. Vous allez craquer !",
+    "Utforsk spennende reisemål, tips for å reise smart, og personlige reiseopplevelser. Få inspirasjon til din neste ferie eller weekendtur.",
 };
 
 import Reise from "@/components/Reise";
 
-export default function Home() {
+export default function ReisePage() {
   return (
     <>
       <Reise />

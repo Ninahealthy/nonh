@@ -1,5 +1,108 @@
 "use client";
 
+import React, { useState, useCallback, useRef, useEffect } from "react";
+import Link from "next/link";
+import styles from "./respnav.module.css";
+
+export default function ResponsiveNavbar() {
+  const [isOpen, setIsOpen] = useState(false);
+  const navRef = useRef(null);
+  const menuButtonRef = useRef(null);
+
+  const toggleMenu = useCallback(() => {
+    setIsOpen((prev) => !prev);
+  }, []);
+
+  const closeMenu = useCallback(() => {
+    setIsOpen(false);
+  }, []);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (
+        navRef.current &&
+        !navRef.current.contains(event.target) &&
+        !menuButtonRef.current.contains(event.target)
+      ) {
+        closeMenu();
+      }
+    };
+
+    const handleEscape = (event) => {
+      if (event.key === "Escape") closeMenu();
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    document.addEventListener("keydown", handleEscape);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener("keydown", handleEscape);
+    };
+  }, [closeMenu]);
+
+  useEffect(() => {
+    if (isOpen) {
+      menuButtonRef.current?.setAttribute("aria-expanded", "true");
+      const firstLink = navRef.current?.querySelector("a");
+      firstLink?.focus();
+    } else {
+      menuButtonRef.current?.setAttribute("aria-expanded", "false");
+    }
+  }, [isOpen]);
+
+  return (
+    <nav className={styles.navbar} ref={navRef}>
+      <div className={styles.logo}>
+        <Link href="/" aria-label="Return to homepage">
+          <span aria-hidden="true">Nina💚</span>
+        </Link>
+      </div>
+
+      <button
+        ref={menuButtonRef}
+        className={`${styles.menuIcon} ${isOpen ? styles.open : ""}`}
+        onClick={toggleMenu}
+        aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
+        aria-controls="main-navigation"
+        aria-expanded={isOpen}
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul
+        id="main-navigation"
+        className={`${styles.navLinks} ${isOpen ? styles.open : ""}`}
+        role="navigation"
+      >
+        <li>
+          <Link
+            href="/Hjem-Dekor"
+            onClick={closeMenu}
+            className={styles.navLink}
+          >
+            🏡Hjem
+          </Link>
+        </li>
+        <li>
+          <Link href="/Livsstil" onClick={closeMenu} className={styles.navLink}>
+            🌿Livsstil
+          </Link>
+        </li>
+        <li>
+          <Link href="/Reise" onClick={closeMenu} className={styles.navLink}>
+            ✈️Reise
+          </Link>
+        </li>
+      </ul>
+    </nav>
+  );
+}
+
+/*"use client";
+
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import styles from "./respnav.module.css";
@@ -35,7 +138,7 @@ export default function ResponsiveNavbar() {
     <nav className={styles.navbar} onClick={handleNavClick}>
       <div className={styles.logo}>
         <Link href="/">
-          <em>NH💚</em>
+          <em>Nina💚</em>
         </Link>
       </div>
       <div
@@ -49,20 +152,20 @@ export default function ResponsiveNavbar() {
       <ul className={`${styles.navLinks} ${isOpen ? styles.open : ""}`}>
         <li>
           <Link href="/">
-            <em>Hjemmeside</em>
+            <em>Hjem</em>
           </Link>
         </li>
         <li>
-          <Link href="/Trives">
-            <em>Trives Godt</em>
+          <Link href="/Livsstil">
+            <em>Livsstil</em>
           </Link>
         </li>
         <li>
           <Link href="/Reise">
-            <em>Reise Godt</em>
+            <em>Reise</em>
           </Link>
         </li>
       </ul>
     </nav>
   );
-}
+}*/

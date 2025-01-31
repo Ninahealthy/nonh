@@ -1,71 +1,124 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Privacy Policy",
-  description: "Privacy Policy",
+  title: "Privacy Policy | Your Data Security & Rights",
+  description:
+    "Comprehensive privacy policy for NinaHealthy.com detailing data collection, usage, protection measures, and your rights under GDPR, CCPA, and other privacy regulations",
 };
 
-export default function Privacy() {
+export default function Important() {
   return (
-    <>
-      <article>
-        <h1>Privacy Policy</h1>
-        <p>
-          At ninahealthy.com, we respect and are committed to protecting your
-          privacy. <br></br>This privacy policy applies to the information that
-          we collect when you use our website, as well as any other information
-          that we may collect in connection with your use of our services.
-        </p>
-        <h2>Information We Collect</h2>
+    <article>
+      <h1>Privacy Policy</h1>
 
-        <p>
-          We collect information from you when you use our website, such as your
-          IP address, browser type, and operating system. <br></br>
-          <br></br>We also collect information about your interactions with our
-          website, such as the pages you visit and the links you click on.
-          <br></br> <br></br>We may also collect personal information from you,
-          such as your name and email address, when you register for an account
-          or subscribe to our newsletter.
-        </p>
-        <h2>Use of Your Information</h2>
-        <p>
-          We use the information we collect to provide you with the services you
-          request, to improve our website and services, and to send you
-          promotional materials.<br></br> We may also use your information to
-          contact you with important information about your account or our
-          services.
-        </p>
-        <h2>Sharing Your Information</h2>
-        <p>
-          We do not share your information with third parties, except as
-          necessary to provide you with the services you request or as required
-          by law.
-          <br></br> We may also share your information with our affiliates and
-          partners for promotional or marketing purposes.
-        </p>
-        <h2>Security</h2>
-        <p>
-          We take the security of your information seriously and take
-          appropriate measures to protect your information from unauthorized
-          access, disclosure, alteration, or destruction.
-        </p>
-        <h2>Changes to this Privacy Policy</h2>
-        <p>
-          We may update this privacy policy from time to time.<br></br> We will
-          notify you of any changes by posting the new privacy policy on our
-          website.
-        </p>
-        <h2>Contact Us</h2>
-        <p>
-          If you have any questions or concerns about this privacy policy,
-          please{" "}
-          <Link href="/Contact">
-            <strong>
-              <em>contact us</em>
-            </strong>
-          </Link>
-        </p>
-      </article>
-    </>
+      <h2>Your Privacy Matters</h2>
+      <p>
+        At NinaHealthy.com, we prioritize your privacy and are committed to
+        safeguarding your personal data. This policy outlines how we collect,
+        use, and protect your information, empowering you to make informed
+        choices.
+      </p>
+
+      <h2>1. Scope</h2>
+      <p>
+        This policy applies to all data collected through NinaHealthy.com,
+        including interactions with our website, services, products, and
+        customer support.
+      </p>
+
+      <h2>2. Information We Collect</h2>
+      <section>
+        <h3>A. Personal Data</h3>
+        Provided voluntarily when you:
+        <ul>
+          <li>- Create an account or place an order</li>
+          <li>- Subscribe to newsletters or contact us</li>
+          <li>- Participate in surveys or promotions</li>
+        </ul>
+        <em>Examples:</em> Name, email, shipping address, payment details.
+        <br />
+        <h3>B. Non-Personal Data</h3>
+        Automatically collected via cookies and analytics tools:
+        <ul>
+          <li>- Device information (IP address, browser type)</li>
+          <li>- Usage patterns (pages visited, session duration)</li>
+          <li>- Aggregated demographic data</li>
+        </ul>
+      </section>
+
+      <h2>3. How We Use Your Data</h2>
+
+      <section>
+        We process your information responsibly to:
+        <ul>
+          <li>- Fulfill orders and deliver services</li>
+          <li>- Personalize content and recommendations</li>
+          <li>- Improve website functionality</li>
+          <li>- Send marketing communications (with consent)</li>
+          <li>- Ensure security and prevent fraud</li>
+        </ul>
+      </section>
+
+      <h2>4. Data Sharing & Third Parties</h2>
+
+      <section>
+        We <strong>do not sell</strong> your personal data. Limited sharing
+        occurs only with:
+        <ul>
+          <li>
+            - Trusted Service Providers bound by confidentiality agreements
+          </li>
+          <li>- Legal compliance requirements</li>
+          <li>- Business transfers during mergers/acquisitions</li>
+        </ul>
+      </section>
+
+      <h2>5. Your Rights & Choices</h2>
+
+      <section>
+        You have the right to:
+        <ul>
+          <li>- Access, correct, or delete your data</li>
+          <li>- Opt out of marketing emails</li>
+          <li>- Withdraw consent</li>
+          <li>- Request data portability</li>
+        </ul>
+        Submit requests via{" "}
+        <Link href="/Contact">
+          <strong>contact form</strong>
+        </Link>{" "}
+        or email [contact@ninahealthy.com].
+      </section>
+
+      <h2>6. Security Measures</h2>
+
+      <section>
+        We employ industry-standard protocols including:
+        <ul>
+          <li>- SSL encryption</li>
+          <li>- Regular security audits</li>
+          <li>- Access controls</li>
+        </ul>
+        <em>Note:</em> While we strive for protection, no digital platform is
+        100% secure.
+      </section>
+
+      <h2>7. Children’s Privacy</h2>
+      <p>
+        Our services are not intended for users under <strong>16</strong>.
+        Contact us immediately if a minor has provided information without
+        consent. <br />
+        For questions or concerns:
+        <br />
+        Email: contact@ninahealthy.com
+        <br />
+        <em>Last Updated: 1/31/2025</em>
+      </p>
+
+      <p>
+        🔒 <strong>Compliance:</strong> GDPR | CCPA | TrustArc | We Do Not Sell
+        Your Info
+      </p>
+    </article>
   );
 }

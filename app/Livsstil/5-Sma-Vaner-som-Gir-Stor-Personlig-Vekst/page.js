@@ -1,5 +1,11 @@
+import Link from "next/link";
+import Image from "next/image";
 import Ad from "@/components/Ad";
-import AuthorIcon from "@/components/AuthorIcon";
+import Styles from "@/components/AuthorIcon.module.css";
+import author from "@/public/young-woman.png";
+
+const style = { width: 50, height: 50 };
+
 //import DisqusComments from "@/components/DisqusComments";
 
 export const metadata = {
@@ -12,7 +18,6 @@ export const metadata = {
 export default function PersonalGrowth() {
   return (
     <>
-      <AuthorIcon />
       <article>
         <h1>5 Små Vaner som Gir Stor Personlig Vekst</h1>
         <Ad slot="2549748890" adformat="auto" responsive="true" />

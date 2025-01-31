@@ -4,16 +4,22 @@
   align-items: center;
   padding: 1rem 2rem;
   color: black;
+  max-width: 700px;
+  margin: auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
 }
 
 .logo a {
   font-size: 1.5rem;
-  font-weight: normal;
+  font-weight: bold;
 }
 
 .navLinks {
   display: flex;
   list-style: none;
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 .navLinks li {
@@ -33,6 +39,9 @@
   margin-bottom: 4px;
   transition: all 0.3s ease;
 }
+.navLink:hover {
+  color: #16a34a;
+}
 
 @media (max-width: 768px) {
   .navLinks {
@@ -44,6 +53,7 @@
     top: 60px;
     padding: 1rem;
     background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
   }
 
   .navLinks.open {
@@ -68,5 +78,15 @@
 
   .menuIcon.open span:nth-child(3) {
     transform: rotate(-45deg) translate(7px, -6px);
+  }
+  .navLink {
+    transition: color 0.2s ease;
+  }
+
+  /* Ensure button styles are reset */
+  button.menuIcon {
+    background: none;
+    border: none;
+    padding: 0;
   }
 }

@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "NH",
+  title: "Nina",
   description: "",
 };
 
@@ -49,7 +49,6 @@ export default function RootLayout({ children }) {
       />
       <body>
         <ResponsiveNavbar />
-        <SearchForm />
         {children}
         <Footer />
       </body>

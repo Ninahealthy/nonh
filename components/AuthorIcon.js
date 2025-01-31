@@ -1,21 +1,19 @@
 import Image from "next/image";
 import author from "@/public/young-woman.png";
 import Link from "next/link";
+import Styles from "@/components/AuthorIcon.module.css";
 
 const style = { width: 50, height: 50 };
 
 export default function AuthorIcon() {
   return (
     <>
-      <authoricon>
+      <div className={Styles.authoricon}>
         <Link href="/About">
           <Image src={author} alt="author" style={style} />
-
-          <h5>
-            By Nina Bernard <br></br> Last Update, 1/28/2025
-          </h5>
+          By Nina
         </Link>
-      </authoricon>
+      </div>
     </>
   );
 }

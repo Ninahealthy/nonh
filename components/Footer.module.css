@@ -1,0 +1,36 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer p {
+  font-weight: 500;
+  margin: 1rem;
+  padding: 1rem;
+  line-height: 2.5rem;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px 0 rgb(0 0 0 / 40%);
+  max-width: 80ch;
+}
+
+.footernav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footernav li {
+  margin: 0.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #000000;
+  border-radius: 20px;
+  padding: 0.5rem;
+}
+
+.footernav li:hover {
+  box-shadow: 5px 5px 20px 0 rgb(0 0 0 / 40%);
+}

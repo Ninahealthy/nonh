@@ -5,16 +5,16 @@ import pic from "@/public/2.jpg";
 import pic2 from "@/public/2.jpg";
 import pic3 from "@/public/3.jpg";
 
-const Trives = () => {
+export default function HjemDekor() {
   const topics = [
     {
       id: 1,
       title: "5 Små Vaner som Gir Stor Personlig Vekst",
       image: pic,
       size: "large",
-      slug: "/Trives/5-Sma-Vaner-som-Gir-Stor-Personlig-Vekst",
+      slug: "/Livsstil/5-Sma-Vaner-som-Gir-Stor-Personlig-Vekst",
     },
-    {
+    /*{
       id: 2,
       title: "How to trust your gut instinct",
       image: pic2,
@@ -27,7 +27,7 @@ const Trives = () => {
       image: pic3,
       size: "small",
       slug: "/topics/gift-guide",
-    },
+    },*/
   ];
 
   return (
@@ -49,6 +49,4 @@ const Trives = () => {
       ))}
     </div>
   );
-};
-
-export default Trives;
+}

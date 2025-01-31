@@ -1,9 +1,10 @@
 import Link from "next/link";
+import Styles from "@/components/Footer.module.css";
 
 export default function Footer() {
   return (
     <>
-      <footer>
+      <footer className={Styles.footer}>
         {/*<p>
           Toute information publiée sur ce site n'a pas pour intention ou ne
           sous-entend pas de se substituer à un conseil médical professionnel,
@@ -49,14 +50,12 @@ export default function Footer() {
             </li>
           </ul>
         </social>*/}
-        <footernav>
+        <div className={Styles.footernav}>
           <ul>
             <li>
               <Link href="/Privacy-policy">Privacy Policy </Link>
             </li>
-            <li>
-              <Link href="/Terms-and-conditions">Terms And Conditions</Link>
-            </li>
+
             <li>
               <Link href="/Important-disclaimer">Important Disclaimer</Link>
             </li>
@@ -67,7 +66,7 @@ export default function Footer() {
               <Link href="/About">About</Link>
             </li>
           </ul>
-        </footernav>
+        </div>
       </footer>
     </>
   );

@@ -5,7 +5,7 @@ import pic from "@/public/1.jpg";
 import pic2 from "@/public/2.jpg";
 import pic3 from "@/public/3.jpg";
 
-const Topics = () => {
+export default function Topics() {
   const topics = [
     {
       id: 1,
@@ -14,7 +14,7 @@ const Topics = () => {
       size: "large",
       slug: "/topics/connections",
     },
-    {
+    /*{
       id: 2,
       title: "How to trust your gut instinct",
       image: pic2,
@@ -27,7 +27,7 @@ const Topics = () => {
       image: pic3,
       size: "small",
       slug: "/topics/gift-guide",
-    },
+    },*/
   ];
 
   const fresh = [
@@ -38,7 +38,7 @@ const Topics = () => {
       size: "large",
       slug: "/topics/connections",
     },
-    {
+    /* {
       id: 2,
       title: "How to trust your gut instinct",
       image: pic2,
@@ -51,7 +51,7 @@ const Topics = () => {
       image: pic3,
       size: "small",
       slug: "/topics/gift-guide",
-    },
+    },*/
   ];
 
   return (
@@ -73,9 +73,9 @@ const Topics = () => {
           </Link>
         ))}
       </div>
-      {/*Something Fresh*/}
+      {/*latest topics*/}
       <div className={Styles.container}>
-        <h1 className={Styles.heading}>Emner jeg trodde du ville like </h1>
+        <h1 className={Styles.heading}>Siste Temaer </h1>
         {fresh.map((topic) => (
           <Link
             key={topic.id}
@@ -92,6 +92,4 @@ const Topics = () => {
       </div>
     </>
   );
-};
-
-export default Topics;
+}
