@@ -4,7 +4,7 @@
   align-items: center;
   padding: 1rem 2rem;
   color: black;
-  max-width: 700px;
+  max-width: 600px;
   margin: auto;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
   border-radius: 20px;
@@ -23,7 +23,7 @@
 }
 
 .navLinks li {
-  margin-left: 1rem;
+  margin: 0 1rem;
 }
 
 .menuIcon {

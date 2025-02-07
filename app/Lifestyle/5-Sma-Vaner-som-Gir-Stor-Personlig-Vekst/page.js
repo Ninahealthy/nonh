@@ -10,7 +10,7 @@ const style = { width: 50, height: 50 };
 
 export const metadata = {
   title: "5 Små Vaner som Gir Stor Personlig Vekst",
-  category: "Trives Godt",
+  category: "🌿LifeStyle",
   description:
     "Oppdag fem enkle, men kraftfulle vaner som kan hjelpe deg å vokse og bli den beste versjonen av deg selv. Perfekt for kvinner som ønsker å blomstre i både personlig og profesjonell hverdag.",
 };

@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "Reise",
-  category: "Reise",
+  title: " Travel",
+  category: " Travel",
   description:
     "Utforsk spennende reisemål, tips for å reise smart, og personlige reiseopplevelser. Få inspirasjon til din neste ferie eller weekendtur.",
 };

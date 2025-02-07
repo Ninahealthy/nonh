@@ -79,21 +79,25 @@ export default function ResponsiveNavbar() {
       >
         <li>
           <Link
-            href="/Hjem-Dekor"
+            href="/Lifestyle"
             onClick={closeMenu}
             className={styles.navLink}
           >
-            🏡Hjem
+            LifeStyle
           </Link>
         </li>
         <li>
-          <Link href="/Livsstil" onClick={closeMenu} className={styles.navLink}>
-            🌿Livsstil
+          <Link href="/Travel" onClick={closeMenu} className={styles.navLink}>
+            Travel
           </Link>
         </li>
         <li>
-          <Link href="/Reise" onClick={closeMenu} className={styles.navLink}>
-            ✈️Reise
+          <Link
+            href="/Home-Decor"
+            onClick={closeMenu}
+            className={styles.navLink}
+          >
+            Home Decor
           </Link>
         </li>
       </ul>

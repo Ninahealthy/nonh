@@ -12,7 +12,7 @@ export default function LifeSyle() {
       title: "5 Små Vaner som Gir Stor Personlig Vekst",
       image: pic,
       size: "large",
-      slug: "/Livsstil/5-Sma-Vaner-som-Gir-Stor-Personlig-Vekst",
+      slug: "/Lifestyle/5-Sma-Vaner-som-Gir-Stor-Personlig-Vekst",
     },
     /*{
       id: 2,
